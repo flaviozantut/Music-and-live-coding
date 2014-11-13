@@ -1,2 +1,2 @@
-## A simple techno tune. ##
+## A tune  ##
 Soundcloud: https://soundcloud.com/danielefilaretti/first-sonic-pi-tune 
