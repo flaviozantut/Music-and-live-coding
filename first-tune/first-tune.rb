@@ -1,8 +1,10 @@
 # Daniele Filaretti - "first sonic pi tune" :)  
 
-# Add your own absolute path to the samples folder below!
-# (using relative path seems broken in current sonic pi?!)
-# use_sample_pack "./samples"
+# INTRUCTIONS:
+#   Uncomment the line below and update it with the path 
+#   to the "samples" folder on your system!
+
+# use_sample_pack "YOUR-LOCATION/Music-and-live-coding/first-tune/samples"
 
 bpm = 130.0
 beat = 60 / bpm
@@ -35,7 +37,7 @@ end
 
 # synth
 
-define :synth do
+define :synth2 do
   with_fx :reverb, mix: 0.4, room: 0.9 do
     with_fx :distortion do
       use_synth :beep
@@ -110,7 +112,7 @@ sleep bar * 4
 
 s = in_thread do
   loop do
-    synth
+    synth2
   end
 end
 
